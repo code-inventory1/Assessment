@@ -1,14 +1,14 @@
 module.exports = {
     setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
     moduleNameMapper: {
-        "\\.(css|scss)$": "identity-obj-proxy", // Mock CSS imports
+        "\\.(css|scss)$": "identity-obj-proxy", 
         "^react-router-dom$": "<rootDir>/node_modules/react-router-dom",
     },
-    testEnvironment: "jsdom", // Important for DOM testing
+    testEnvironment: "jsdom", 
     transformIgnorePatterns: [
-        "node_modules/(?!(axios|react-router-dom)/)", // ✅ Ensure Jest transpiles axios
+        "node_modules/(?!(axios|react-router-dom)/)", 
       ],
       transform: {
-        "^.+\\.jsx?$": "babel-jest", // ✅ Ensure Jest uses Babel to transform JS files
+        "^.+\\.jsx?$": "babel-jest", 
       },
 };

@@ -1,12 +1,12 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
 import pluginReact from "eslint-plugin-react";
-import pluginCypress from "eslint-plugin-cypress"; // Import Cypress plugin
+import pluginCypress from "eslint-plugin-cypress"; 
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   { files: ["**/*.{js,mjs,cjs,jsx}"] },
-  { languageOptions: { globals: { ...globals.browser, ...globals.jest, ...globals.cypress } } }, // ✅ Add Cypress globals
+  { languageOptions: { globals: { ...globals.browser, ...globals.jest, ...globals.cypress } } }, 
   pluginJs.configs.recommended,
   {
     ...pluginReact.configs.flat.recommended,
@@ -16,5 +16,5 @@ export default [
       },
     },
   },
-  pluginCypress.configs.recommended, // ✅ Add Cypress recommended rules
+  pluginCypress.configs.recommended, 
 ];
