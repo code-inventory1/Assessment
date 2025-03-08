@@ -6,7 +6,7 @@ import ArticleList from "./components/ArticleList";
 import ArticleDetail from "./components/ArticleDetail";
 import "./App.css";
 
-const API_KEY = "rFDLnuDWALCo0SjIGPVNq29H4PZ6LJ9W"; 
+const API_KEY = process.env.REACT_APP_NY_API_KEY
 const API_URL = `https://api.nytimes.com/svc/mostpopular/v2/viewed/30.json?api-key=${API_KEY}`;
 
 const App = () => {

@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "title": "Mock Article 1",
+      "abstract": "This is a mock abstract.",
+      "url": "https://www.nytimes.com/mock-article-1"
+    },
+    {
+      "id": 2,
+      "title": "Mock Article 2",
+      "abstract": "This is another mock abstract.",
+      "url": "https://www.nytimes.com/mock-article-2"
+    }
+  ]
+}
