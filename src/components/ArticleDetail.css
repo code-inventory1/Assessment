@@ -1,0 +1,44 @@
+.article-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Centers the detail view vertically */
+    padding: 20px;
+  }
+  
+  .article-detail {
+    width: 50%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .article-detail h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .article-detail p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .article-detail a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .article-detail a:hover {
+    background-color: #0056b3;
+  }
+  
