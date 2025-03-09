@@ -3,9 +3,9 @@ describe("NY Times Articles App", () => {
     cy.intercept("GET", "https://api.nytimes.com/svc/mostpopular/v2/viewed/30.json*", {
       fixture: "articles.json", // Mock API response
     }).as("getArticles");
+    
 
-    // cy.visit("/");
-    cy.visit("http://localhost:3001/");
+    cy.visit("/");
 
   });
 
@@ -31,6 +31,7 @@ describe("NY Times Articles App", () => {
     }).as("getArticlesError");
 
     cy.visit("/");
+
     cy.wait("@getArticlesError");
     cy.get(".error").should("contain", "Error");
   });
